@@ -1,0 +1,22 @@
+:root{
+    --color-pallete-1: #0fa3b1;
+    --color-pallete-2: #d9e5d6;
+    --color-pallete-3: #eddea4;
+    --color-pallete-4: #f7a072;
+}
+
+html{
+    height: 100%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+p{
+    font-size: 24px;
+}
+
+.option:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}

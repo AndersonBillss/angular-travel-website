@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    color: var(--color-pallete-4);
+    border-bottom: 3px var(--color-pallete-2) solid;
+}
+.country-title{
+    font-size: 42px;
+    color: var(--color-pallete-4);
+    background-color: var(--color-pallete-2);
+    padding: 10px 20px;
+}

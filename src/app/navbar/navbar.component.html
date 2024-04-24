@@ -1,0 +1,20 @@
+<div class="navbar">
+    <div *ngFor="let option of navOptions" class="optionsList">
+
+        <a 
+        *ngIf="currentPage && option.route !== currentPage"
+        routerLink="{{option.route}}"
+        class="nav option"
+        >
+            {{option.text}}
+        </a>
+
+        <div 
+        *ngIf="currentPage && option.route === currentPage"
+        class="selected nav option"
+        >
+            {{option.text}}
+        </div>
+
+    </div>
+</div>
