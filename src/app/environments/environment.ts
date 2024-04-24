@@ -1,3 +1,3 @@
 export const environment = {
-    msg: 'test2'
+    msg: 'test3'
 };
