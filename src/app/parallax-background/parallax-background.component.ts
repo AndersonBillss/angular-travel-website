@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-parallax-background',
@@ -8,6 +8,8 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 export class ParallaxBackgroundComponent {
   @ViewChild('parallaxImg') parallaxImg!: ElementRef;
   @ViewChild('parallaxContainer') parallaxContainer!: ElementRef;
+
+  @Input() img!: string;
 
   prevWindowWidth: number = window.innerWidth
   imgCenterX: number = 0
@@ -20,9 +22,10 @@ export class ParallaxBackgroundComponent {
 
     
     window.addEventListener('resize', () => this.handleWindowResize(img, container, false))
-    this.handleWindowResize(img, container, true)
-
     document.addEventListener('scroll', () => this.parallaxScroll(img, container))
+
+    this.handleWindowResize(img, container, true)
+    this.handleWindowResize(img, container, true)
   }
 
   handleWindowResize(img: HTMLElement, container: HTMLElement, force: boolean){
