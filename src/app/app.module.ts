@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HttpClientModule } from '@angular/common/http';
 import { GetLocationsService } from './services/get-locations.service';
 import { FeaturedCountryComponent } from './featured-country/featured-country.component';
+import { ParallaxBackgroundComponent } from './parallax-background/parallax-background.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FeaturedCountryComponent } from './featured-country/featured-country.co
     NavbarComponent,
     PageNotFoundComponent,
     FeaturedCountryComponent,
+    ParallaxBackgroundComponent,
   ],
   imports: [
     BrowserModule,

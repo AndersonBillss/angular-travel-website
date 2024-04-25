@@ -20,3 +20,9 @@ p{
     cursor: pointer;
     filter: brightness(90%);
 }
+
+app-parallax-background{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
