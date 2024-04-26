@@ -2,6 +2,7 @@
     <img 
     #parallaxImg 
     src="{{img}}" 
+    (load)="handleWindowResize(parallaxImg, parallaxContainer, true)"
     class="parallax-img" 
     />
 </div>

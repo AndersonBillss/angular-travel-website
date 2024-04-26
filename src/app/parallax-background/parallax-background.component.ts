@@ -18,15 +18,14 @@ export class ParallaxBackgroundComponent {
   ngAfterViewInit() {
     const img = this.parallaxImg.nativeElement
     const container = this.parallaxContainer.nativeElement
-
-
     
     window.addEventListener('resize', () => this.handleWindowResize(img, container, false))
     document.addEventListener('scroll', () => this.parallaxScroll(img, container))
 
     this.handleWindowResize(img, container, true)
-    this.handleWindowResize(img, container, true)
+
   }
+
 
   handleWindowResize(img: HTMLElement, container: HTMLElement, force: boolean){
     if((this.prevWindowWidth != window.innerWidth) || force){
